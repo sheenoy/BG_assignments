@@ -8,19 +8,19 @@ $love_occured = 0;
 $l = $o = $v = $e = false;
 for ($i = 0; $i < count($msg_arr); $i++)  
 { 
-    if ($msg_arr[$i] == 'l') {
+    if ($msg_arr[$i] == 'l' && $l == false) {
         $l = true;
         $l_index = $i;
     }
-    if ($msg_arr[$i] == 'o') {
+    if ($msg_arr[$i] == 'o' && $o == false) {
     	$o = true;
     	$o_index = $i;
     }
-    if ($msg_arr[$i] == 'v') {
+    if ($msg_arr[$i] == 'v' && $v == false) {
     	$v = true;
     	$v_index = $i;
     }
-    if ($msg_arr[$i] == 'e') {
+    if ($msg_arr[$i] == 'e' && $e == false) {
     	$e = true;
     	$e_index = $i;
     }
